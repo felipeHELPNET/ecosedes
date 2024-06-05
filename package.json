@@ -1,0 +1,19 @@
+{
+  "name": "landing-page-responsiva-simples-com-html-e-css-tutorial-main",
+  "version": "1.0.0",
+  "description": "LANDING PAGE RESPONSIVA SIMPLES com HTML E CSS ## [Assistir No YouTube](https://www.youtube.com/watch?v=xBJebak-ddY) ## [Se Subescreva no canal](https://www.youtube.com/channel/UCxKIsX5OXyyNWVmomuDc-LA?sub_confirmation=1) ![Resume cv](/Como-Fazer-uma-LANDING-PAGE-RESPONSIVA-SIMPLES-com-HTML-E-CSS.jpg)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
