@@ -30,6 +30,7 @@
 @media (max-width: 800px) {
   .topoNav {
     flex-direction: column;
+    padding: 2rem;
   }
 }
 
