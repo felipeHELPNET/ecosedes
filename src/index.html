@@ -6,20 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- link css -->
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    <title>Landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Eco-SEDES</title>
   </head>
 
   <body>
+    <nav class="topoNav">
+      <div>
+        <a href="index.html"> <img src="./public/logoSedes.svg" /></a>
+      </div>
+      <span class="poetsen-one-regular">INTEGRAL SEDES</span>
+      <div>
+        <img src="./public/integralSemfundo.png" />
+      </div>
+    </nav>
     <div class="wrapper">
       <!-- nav -->
-      <nav>
-        <div class="logo">
-          <a href="index.html"> <img src="./public/logoSedes.svg" /> </a>
+      <!-- <nav class="topoNav">
+        <div>
+          <a href="index.html"> <img src="./public/logoSedes.svg" /></a>
         </div>
-        <span class="spanIntegral">Integral SEDES</span>
-      </nav>
-      <!-- end nav -->
+        <span class="poetsen-one-regular">INTEGRAL SEDES</span>
+        <div>
+          <img src="./public/integralTaubate.png" />
+        </div>
+      </nav> -->
+      <!-- end nav a -->
       <!-- main -->
       <div class="parte1">
         <main>
@@ -27,11 +44,62 @@
           <div class="main__text">
             <h1>Dia do MEIO AMBIENTE</h1>
             <h3>Faça sua parte por um mundo melhor :-)</h3>
-            <button>Ver Mais</button>
+            <button id="abrirModal">Ver Mais</button>
+
+            <div id="modal" class="modal">
+              <div class="modal-content">
+                <span class="fechar">&times;</span>
+                <h2 class="p1T">
+                  10 atitudes que você pode adotar no seu dia a dia para
+                  colaborar com o meio ambiente:
+                </h2>
+                <p class="p2">
+                  <b> Economize água: </b>Reduza o tempo de banho, aproveite a
+                  água da chuva e reutilize a água da máquina de lavar.
+                </p>
+                <p class="p1">
+                  <b>Economize energia: </b>Desligue aparelhos eletrônicos não
+                  utilizados, apague as luzes e troque por lâmpadas mais
+                  econômicas.
+                </p>
+                <p class="p2">
+                  <b>Evite o consumismo:</b> Pense antes de comprar produtos
+                  desnecessários.
+                </p>
+                <p class="p1">
+                  <b>Separe o lixo: </b>Recicle materiais e faça a destinação
+                  correta.
+                </p>
+                <p class="p2">
+                  <b>Não jogue lixo nas ruas:</b> Isso evita poluição e
+                  enchentes.
+                </p>
+                <p class="p1">
+                  <b> Ande mais a pé ou de bicicleta: </b>Reduza a emissão de
+                  poluentes.
+                </p>
+                <p class="p2">
+                  <b>Preserve a vegetação nativa e os cursos d’água: </b>
+                  Contribua para a biodiversidade. Plante árvores!!!
+                </p>
+                <p class="p2">
+                  <b> Opte por alimentos orgânicos:</b> Eles são mais
+                  sustentáveis.
+                </p>
+                <p class="p1">
+                  <b>Reduza o uso de plástico:</b> Prefira sacolas reutilizáveis
+                  e evite produtos descartáveis.
+                </p>
+                <p class="p2">
+                  <b> Participe de ações voluntárias: </b>Engaje-se em projetos
+                  de preservação ambiental.
+                </p>
+              </div>
+            </div>
 
             <div class="main__text-footer">
               <div>
-                <h4>Afinal o que é o Meio Ambiente?</h4>
+                <h2>Afinal o que é o Meio Ambiente?</h2>
                 <p>
                   "Meio ambiente é o conjunto de elementos, processos e
                   dinâmicas biológicos, físicos e químicos que criam condições e
@@ -65,10 +133,9 @@
             <img src="./public/somosParte.jpg" width="100%" />
           </div>
           <div class="main__text">
-            <h1>Somos parte...</h1>
-
             <div class="main__text-footer">
               <div>
+                <h2>Somos parte...</h2>
                 <p>
                   O meio ambiente é muito mais do que um cenário ao nosso redor;
                   é a base da nossa existência. Somos parte integrante desse
@@ -87,8 +154,8 @@
         </main>
       </div>
 
-      <h1>Alguns trabalhos desenvolvidos pelos nossos alunos:</h1>
       <div class="carrusel">
+        <h3>Alguns trabalhos desenvolvidos pelos nossos alunos:</h3>
         <div class="slides">
           <img
             src="public/WhatsApp Image 2024-06-05 at 15.49.34.jpeg"
@@ -120,10 +187,11 @@
           />
           <!-- Adicione mais imagens conforme necessário -->
         </div>
-        <button class="btn btn-prev">&lt;</button>
-        <button class="btn btn-next">&gt;</button>
+        <button class="btn btn-prev" id="btn-prev">&lt;</button>
+        <button class="btn btn-next" id="btn-next">&gt;</button>
       </div>
       <!-- end main -->
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

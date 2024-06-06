@@ -4,6 +4,7 @@
   "description": "LANDING PAGE RESPONSIVA SIMPLES com HTML E CSS ## [Assistir No YouTube](https://www.youtube.com/watch?v=xBJebak-ddY) ## [Se Subescreva no canal](https://www.youtube.com/channel/UCxKIsX5OXyyNWVmomuDc-LA?sub_confirmation=1) ![Resume cv](/Como-Fazer-uma-LANDING-PAGE-RESPONSIVA-SIMPLES-com-HTML-E-CSS.jpg)",
   "main": "server.js",
   "scripts": {
+    "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
