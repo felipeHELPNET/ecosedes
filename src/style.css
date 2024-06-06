@@ -27,6 +27,12 @@
   width: 100vw;
 }
 
+@media (max-width: 800px) {
+  .topoNav {
+    flex-direction: column;
+  }
+}
+
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
