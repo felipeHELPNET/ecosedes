@@ -185,7 +185,7 @@ main .main__img {
 }
 
 .fechar {
-  color: #aaa;
+  color: red;
   float: right;
   font-size: 28px;
   font-weight: bold;
